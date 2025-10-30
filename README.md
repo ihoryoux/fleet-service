@@ -118,7 +118,7 @@ Returns list of service orders
 
 #### Schema:
 ```ts
-type OrderResponse = {
+OrderResponse = {
   id: number;
   title: string;
   status: "in_service" | "pending" | "completed" | "cancelled";
