@@ -19,9 +19,6 @@ class Driver
     #[ORM\Column(length: 255)]
     private ?string $name = null;
 
-    #[ORM\Column]
-    private ?bool $isActive = null;
-
     #[ORM\Column(length: 255, unique: true)]
     #[Assert\Email]
     private ?string $email = null;
@@ -39,18 +36,6 @@ class Driver
     public function setName(string $name): static
     {
         $this->name = $name;
-
-        return $this;
-    }
-
-    public function isActive(): ?bool
-    {
-        return $this->isActive;
-    }
-
-    public function setIsActive(bool $isActive): static
-    {
-        $this->isActive = $isActive;
 
         return $this;
     }
