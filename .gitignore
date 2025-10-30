@@ -1,6 +1,6 @@
 /.idea/
 /.env*
-!.env.example
+!.env.example*
 ###> symfony/framework-bundle ###
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/

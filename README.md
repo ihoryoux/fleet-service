@@ -152,7 +152,9 @@ type OrderResponse = {
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
+
+**IMPORTANT! For running tests, copy** *.env.example.test* **to** *.env.test*
 
 ### 1. Create the test database
 ```bash
@@ -183,7 +185,7 @@ docker exec -e APP_ENV=test -it fleet-service-php php bin/phpunit --testsuite Fu
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - PHP 8.3
 - Symfony 7
