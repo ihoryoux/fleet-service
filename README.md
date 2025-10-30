@@ -24,10 +24,6 @@ docker compose up -d
 ```
 
 3. **Create .env from .env.example**
-```bash
-docker exec -it fleet-service-php composer install
-```
-
 4. **Install dependencies inside the PHP container**
 ```bash
 docker exec -it fleet-service-php composer install
