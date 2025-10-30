@@ -2,16 +2,15 @@
 
 namespace App\Tests\Unit\Enum;
 
-use App\Enum\ServiceOrderStatus;
+use App\Enum\FleetSetStatus;
 use PHPUnit\Framework\TestCase;
 
-class ServiceOrderStatusTest extends TestCase
+class FleetSetStatusTest extends TestCase
 {
     public function testEnumCases(): void
     {
-        $this->assertSame('in_service', ServiceOrderStatus::IN_SERVICE->value);
-        $this->assertSame('completed', ServiceOrderStatus::COMPLETED->value);
-        $this->assertSame('pending', ServiceOrderStatus::PENDING->value);
-        $this->assertSame('cancelled', ServiceOrderStatus::CANCELLED->value);
+        $this->assertSame('Works', FleetSetStatus::WORKS->value);
+        $this->assertSame('Free', FleetSetStatus::FREE->value);
+        $this->assertSame('Downtime', FleetSetStatus::DOWNTIME->value);
     }
 }
